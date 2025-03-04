@@ -19,7 +19,7 @@ function App() {
  
   const formattedDate = `${month} ${day}, ${year}`;
  
-  const API_KEY = "bcda10ba323e88e96cb486015a104d1d"; // Replace 'YOUR_API_KEY' with your actual API key from OpenWeatherMap
+  const API_KEY = "bcda10ba323e88e96cb486015a104d1d";
  
   const fetchWeatherData = async () => {
     try {
@@ -28,17 +28,12 @@ function App() {
       );
       const data = await response.json();
       console.log(data)
-      // if (response.ok) {
+      
       setWeatherData(data);
-      // setError(null);
-      // } else {
-      //   setError(data.message);
-      //   setWeatherData(null);
-      // }
+      
     } catch (error) {
       console.error("Error fetching weather data:", error);
-      // setError("Error fetching weather data. Please try again later.");
-      // setWeatherData(null);
+      
     }
   };
  
