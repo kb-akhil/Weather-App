@@ -1,13 +1,106 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Google Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    /* background: #0059FF; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+    background: #EDF0F6;
+    background: linear-gradient(354deg, #137df5 0%, #14b1f8 100%);
+    /* padding: 3px 12px 10px; */
+    width: 320px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container_date {
+    color: white;
+    margin-top: 76px;
+    opacity: 47%;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.container_city {
+    margin-top: 1rem;
+    font-size: 37px;
+    font-weight: 700;
+    color: white;
+}
+
+.container_degree {
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+    position: relative;
+    top: -20px;
+}
+
+.container_img {
+    position: relative;
+    top: -29px;
+}
+
+.degree_icon {
+    font-size: 20px;
+}
+
+.container_per {
+    position: relative;
+    top: -15px;
+    color: white;
+    font-size: 18px;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 15px 15px 15px 15px;
+    background: #e8e8e8;
+    transition: 0.35s;
+    position: relative;
+    top: -2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+button {
+    border: none;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 1rem;
+    font-weight: 10px;
+    border-radius: 15px 15px 15px 15px;
+    border-color:#646262;
+    transition: 0.35s;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.input:focus {
+    outline-color: #9b9292;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #e8e8e8,
+                inset -20px -20px 60px #ffffff;
+    transition: 0.35s;
+}
+
+
+
+button:active {
+    color: #606;
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+form {
+    margin-top: 3rem;
 }
